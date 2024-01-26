@@ -1,0 +1,264 @@
+body{
+    background:rgb(14, 42, 53);
+   
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh;
+
+    overflow:hidden;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wish{
+    margin: 2rem;
+}
+.container{
+    display: flex;  
+}
+.flag{
+    position:relative;
+    left:38%;
+    top:15px;
+}
+#top{
+    margin-right: 2px;
+   height:50px;
+   background:#fc8326;
+   box-shadow:0 0 5px #ff9c51;
+   -webkit-animation: top_anim 4.5s infinite; 
+   animation: top_anim 4.5s infinite; 
+}
+@-webkit-keyframes top_anim{
+    0%{
+        width:0px;
+    }
+    30%{
+        width:250px;
+    }
+    70%{
+        width:250px;
+    }
+    100%{
+        width:0px;
+    }
+
+
+}
+@keyframes top_anim{
+    0%{
+        width:0px;
+    }
+    30%{
+        width:250px;
+    }
+    70%{
+        width:250px;
+    }
+    100%{
+        width:0px;
+    }
+
+    
+}
+#middle{
+    height:50px;
+    background:white;
+    box-shadow: 0 0 5px white;
+    -webkit-animation: middle_anim 4.5s infinite; 
+   animation: middle_anim 4.5s infinite; 
+   -webkit-animation-delay: 0.2s;
+   animation-delay: 0.2s;
+
+}
+@-webkit-keyframes middle_anim{
+    0%{
+        width:0px;
+    }
+    30%{
+        width:250px;
+    }
+    70%{
+        width:250px;
+    }
+    100%{
+        width:0px;
+    }
+
+
+}
+@keyframes middle_anim{
+    0%{
+        width:0px;
+    }
+    30%{
+        width:250px;
+    }
+    70%{
+        width:250px;
+    }
+    100%{
+        width:0px;
+    }
+
+    
+}
+#middle img{
+    display:block;
+    width: 50px;
+    height: 50px;
+    margin:auto;
+    -webkit-animation: img_anim 4.5s infinite linear; 
+    animation: img_anim 4.5s infinite; 
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+
+}
+@-webkit-keyframes img_anim{
+    0%{
+        opacity:0;
+
+    }
+    30%{
+        opacity:0;
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+    }
+    38%{
+        opacity:1;
+    }
+    62%{
+        opacity:1;
+    }
+    70%{
+        opacity:0;
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+    }
+    100%{
+        opacity:0;
+    }
+
+}
+@keyframes img_anim{
+    0%{
+        opacity:0;
+
+    }
+    30%{
+        opacity:0;
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+    }
+    38%{
+        opacity:1;
+    }
+    62%{
+        opacity:1;
+    }
+    70%{
+        opacity:0;
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+    }
+    100%{
+        opacity:0;
+    }
+
+}
+
+#bottom{
+    height:50px;
+    background:#35a127;
+    box-shadow:0 0 5px #35a127;
+    -webkit-animation: top_anim 4.5s infinite; 
+    animation: top_anim 4.5s infinite; 
+ }
+ @-webkit-keyframes bottom_anim{
+     0%{
+         width:0px;
+     }
+     30%{
+         width:250px;
+     }
+     70%{
+         width:250px;
+     }
+     100%{
+         width:0px;
+     }
+ 
+ 
+ }
+ @keyframes bottom_anim{
+     0%{
+         width:0px;
+     }
+     30%{
+         width:250px;
+     }
+     70%{
+         width:250px;
+     }
+     100%{
+         width:0px;
+     }
+ 
+     
+ }
+ #rod {
+    height: 260px;
+    width: 10px;
+    background: rgb(255, 250, 250);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#text{
+    text-align: center;
+    justify-content: center;
+    
+    color: azure;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles for smaller screens */
+    .wish {
+        padding: 10px;
+    }
+
+    .wish h1 {
+        font-size: 1.5em;
+    }
+
+    .wish h2 {
+        font-size: 1.2em;
+    }
+
+    .flag {
+        margin-left:-6rem ;
+        margin-top: 10px;
+    }
+
+    #middle img {
+        width: 80%;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+}
